@@ -13,7 +13,7 @@ This is a **Node.js** project that implements **IoT integration** with **Odoo ER
 
 1. Clone this repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Muezhan/odoo14-mqtt-dashboard.git
     ```
 2. Navigate to the project directory:
     ```bash
