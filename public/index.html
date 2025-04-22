@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>MQTT Dashboard</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navBar">
+            <div class="arrow-btn">
+                <i id="arrow-icon" data-feather="arrow-right"></i>
+            </div>
+            <div class="navBar-nav">
+                <div class="navBar-nav-iot">
+                    <i id="navBar-nav-iot-btn" data-feather="hard-drive"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="main-container">
+            <div class="main-container-top">
+                <div class="title">
+                    <h1>Dashboard</h1>
+                    <p>MQTT & IoT Devices</p>
+                </div>
+                <form class="search-bar">
+                    <i data-feather="search" class="search-icon" id="search-icon"></i>
+                    <!-- <label for="search-bar"></label> -->
+                    <input 
+                    placeholder="Search Devices Name or IP"
+                    aria-label="Devices Name or IP"
+                    autocomplete="off"
+                    inputmode="search"
+                    type="search" name="search-bar" id="search-bar">
+                </form>
+            </div>
+            <div class="content">
+                <div class="main-content">
+                    <div class="main-content-data">
+                        <div class="main-content-data-header">
+                            <h2>All Devices</h2>
+                        </div>
+                        <div class="table-devices-container">
+
+                            <table class="table-devices">
+                                <thead class="table-devices-header">
+                                    <tr>
+                                        <th>Devices Name</th>
+                                        <th>Type</th>
+                                        <th>Broker</th>
+                                        <th>Topic</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-devices-data">
+                                    <!-- <tr>
+                                        <td>SMART 01</td>
+                                        <td>modbus</td>
+                                        <td>127.0.0.1:8001</td>
+                                        <td>smart/topic2/status</td>
+                                        <td><span><i data-feather="check-circle" class="online-icon"></i></span></td>
+                                    </tr> -->
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-content">
+                    <div class="sub-content-container">
+                        <div class="sub-content-top">
+                            <h2>Device</h2>
+                        </div>
+                        <div class="sub-content-main">
+                            <div class="nfc-container">
+                                <i data-feather="wifi"></i>
+                                <p>No Devices Selected.</p>
+                            </div>
+                            <div class="sub-content-data">
+                                <p>data</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="scripts/socket.js">
+    
+</script>
+</body>
+<script src="scripts/index.js" type="text/javascript"></script>
+
+</html>

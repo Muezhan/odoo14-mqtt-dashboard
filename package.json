@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "core-js": "^3.41.0",
+    "express": "^5.1.0",
+    "feather-icons": "^4.29.2",
+    "mqtt": "^5.11.0",
+    "odoo-xmlrpc": "^1.0.8",
+    "socket.io": "^4.8.1"
+  },
+  "name": "nfc_dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for IoT Devices Odoo14",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muezhan/odoo14-mqtt-dashboard.git"
+  },
+  "author": "Arfan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muezhan/odoo14-mqtt-dashboard/issues"
+  },
+  "homepage": "https://github.com/Muezhan/odoo14-mqtt-dashboard#readme"
+}
